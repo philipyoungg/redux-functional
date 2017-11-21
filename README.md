@@ -8,16 +8,18 @@ Create a reducer in functional way
 import createReducer from "redux-functional";
 
 // helpers
-const always = val => val;
+const addOne = (action, state) => state + 1;
+const removeOne = (action, state) => state - 1;
+const alwaysZero = () => 0;
 const identity = action => action.payload;
 
 const initialState = 0;
 
 const handlers = {
-    INCREMENT: (action, state) => state + 1,
-    DECREMENT: (action, state) => state - 1,
-    RESET: (action, state) => always(0),
-    SET_VALUE: identity
+    INCREMENT: addOne,
+    DECREMENT: removeOne,
+    RESET: alwaysZero,
+    SET_VALUE: identity,
 };
 
 const counter = createReducer(initialState, handlers);
