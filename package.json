@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ['redux', 'create-reducer', 'functional-redux'],
+  "keywords": ["redux", "create-reducer", "functional-redux"],
   "author": "Philip Young Gunawan <hello@philipyoungg.com> (http://www.philipyoungg.com)",
   "license": "MIT"
 }
