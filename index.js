@@ -23,8 +23,7 @@ module.exports = function createReducer(initialState, handlers) {
         console.warn('You didn\'t pass initialState and handlers to parameter. Please refer to documentation.')
     }
 
-    return function(state, action) {
-        var state = initialState;
+    return function(initialState, action) {
         return handlers.hasOwnProperty(action.type)
             ? handlers[action.type](action, state)
             : state
