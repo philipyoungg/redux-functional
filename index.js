@@ -4,7 +4,7 @@
  * @return {Boolean}
  * */
 function isUndefined(thing) {
-    return typeof thing === 'undefined'
+    return typeof thing === "undefined";
 }
 
 /** Create a reducer in functional way
@@ -18,14 +18,16 @@ function isUndefined(thing) {
  * })
  */
 module.exports = function createReducer(initialState, handlers) {
-
     if (isUndefined(initialState) || isUndefined(handlers)) {
-        console.warn('You didn\'t pass initialState and handlers to parameter. Please refer to documentation.')
+        console.warn(
+            "You didn't pass initialState and handlers to parameter. Please refer to documentation."
+        );
     }
 
-    return function(initialState, action) {
+    return function(state, action) {
+        if (isUndefined(state)) state = initialState;
         return handlers.hasOwnProperty(action.type)
             ? handlers[action.type](action, state)
-            : state
-    }
-}
+            : state;
+    };
+};
