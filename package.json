@@ -1,12 +1,16 @@
 {
   "name": "redux-functional",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create redux reducer that supports functional composition.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["redux", "create-reducer", "functional-redux"],
+  "keywords": [
+    "redux",
+    "create-reducer",
+    "functional-redux"
+  ],
   "author": "Philip Young Gunawan <hello@philipyoungg.com> (http://www.philipyoungg.com)",
   "license": "MIT"
 }
