@@ -1,6 +1,6 @@
 {
   "name": "redux-functional",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Create redux reducer that supports functional composition.",
   "main": "index.js",
   "scripts": {
