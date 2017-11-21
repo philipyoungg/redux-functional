@@ -1,5 +1,5 @@
 {
-  "name": "redux-functional-reducer",
+  "name": "redux-functional",
   "version": "1.0.0",
   "description": "Create redux reducer that supports functional composition.",
   "main": "index.js",
