@@ -11,10 +11,10 @@ function isUndefined(thing) {
  * @param {any} - initial state could be anything
  * @param {Object} - an object with ACTION_TYPE on key and function on the value. Each function are passed the action object and state to the argument.
  * @example const counter = createReducer(0, {
- *     INCREMENT: (state, action) => state + 1,
- *     DECREMENT: (state, action) => state - 1,
- *     RESET: (state, action) => 0,
- *     SET_VALUE: (state, action) => action
+ *     INCREMENT: (action, state) => state + 1,
+ *     DECREMENT: (action, state) => state - 1,
+ *     RESET: (action, state) => 0,
+ *     SET_VALUE: (action, state) => action
  * })
  */
 module.exports = function createReducer(initialState, handlers) {
