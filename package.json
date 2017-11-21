@@ -1,7 +1,7 @@
 {
-  "name": "create-reducer",
+  "name": "redux-functional-reducer",
   "version": "1.0.0",
-  "description": "Create redux reducer in functional way",
+  "description": "Create redux reducer in functional way. Support functional composition.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
