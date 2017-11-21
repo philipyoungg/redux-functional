@@ -1,12 +1,12 @@
 {
   "name": "create-reducer",
   "version": "1.0.0",
-  "description": "",
+  "description": "Create redux reducer in functional way",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ['redux', 'create-reducer', 'functional-redux'],
   "author": "Philip Young Gunawan <hello@philipyoungg.com> (http://www.philipyoungg.com)",
-  "license": "ISC"
+  "license": "MIT"
 }
